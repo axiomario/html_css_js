@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validacion</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" placeholder="Inserte texto">
+        <input type="text" autofocus>
+        <input type="text" autocomplete="off">
+        <select multiple>
+            <option value="1">Opción 1</option>
+            <option value="2">Opción 2</option>
+            <option value="3">Opción 3</option>
+        </select>
+        <hr>
+        <input type="text" required>
+        <input type="text" disabled>
+        <input type="text" readonly value="Solo lectura">
+        <input type="text" pattern="[A-Za-z]{3,}" title="Debe contener al menos 3 letras">
+        <input type="text" placeholder="Solo letras" pattern="[A-Za-z]+" title="Solo letras permitidas">
+        <input type="number" min="5" max="15" step="1" title="Número entre 5 y 15">
+        <input type="password" minlength="8" title="Mínimo 8 caracteres">
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Reiniciar">
+    </form>
+</body>
+</html>

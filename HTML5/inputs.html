@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Tipo texto</label>
+        <input type="text">
+        <br>
+        <label for="">Tipo contraseña</label>
+        <input type="password">
+        <br>
+        <label for="">Tipo número</label>
+        <input type="number">
+        <br>
+        <label for="">Tipo email</label>
+        <input type="email">
+        <br>
+        <label for="">Tipo fecha</label>
+        <input type="date">
+        <br>
+        <label for="">Tipo hora</label>
+        <input type="time">
+        <br>
+        <label for="">Tipo URL</label>
+        <input type="url">
+        <br>
+        <label for="">Tipo color</label>
+        <input type="color">
+        <br>
+        <label for="">Tipo archivo</label>
+        <input type="file">
+        <br>
+        <label for="">Tipo búsqueda</label>
+        <input type="search">
+        <br>
+        <label for="">Tipo teléfono</label>
+        <input type="tel">
+        <br>
+        <label for="">Tipo mes</label>
+        <input type="month">
+        <br>
+        <label for="">Tipo semana</label>
+        <input type="week">
+        <br>
+        <label for="">Tipo número con rango</label>
+        <input type="number" min="1" max="10" step="1">
+        <br>
+        <label for="">Tipo rango</label>
+        <input type="range" min="0" max="100" step="1">
+        <br>
+        <label for="">Tipo casilla de verificación</label>
+        <input type="checkbox">
+        <br>
+        <label for="">Tipo botón de opción</label>
+        <input type="radio" name="option" value="1"> Opción 1
+        <input type="radio" name="option" value="2"> Opción 2
+        <br>
+        <label for="">Tipo botón de envío</label>
+        <input type="submit" value="Enviar">
+        <br>
+        <label for="">Tipo botón de reinicio</label>
+        <input type="reset" value="Reiniciar">
+        <br>
+        <label for="">Tipo botón</label>
+        <input type="button" value="Botón">
+        <br>
+        <label for="">Tipo imagen</label>
+        <input type="image" src="https://via.placeholder.com/150" alt="Imagen">
+        <br>
+        <label for="">Tipo oculto</label>
+        <input type="hidden" value="valor_oculto">
+        <br>
+        <label for="">Tipo fecha y hora local</label>
+        <input type="datetime-local">
+        <br>
+        <label for="">Tipo número con decimales</label>
+        <input type="number" step="0.01">
+        <br>
+        <label for="">Tipo mes y año</label>
+        <input type="month" step="1">
+        <br>
+        <label for="">Tipo semana y año</label>
+        <input type="week" step="1">
+        <br>
+        <label for="">Tipo texto con patrón</label>
+        <input type="text" pattern="[A-Za-z]{3,}">
+        <br>
+        <label for="">Tipo texto con longitud mínima</label>
+        <input type="text" minlength="5">
+        <br>
+        <label for="">Tipo texto con longitud máxima</label>
+        <input type="text" maxlength="10">
+        <br>
+        <label for="">Tipo texto con longitud exacta</label>
+        <input type="text" size="10">
+        <br>
+        <label for="">Tipo texto con autocompletado</label>
+        <input type="text" autocomplete="on">
+        <br>
+        <label for="">Tipo texto con autocompletado desactivado</label>
+        <input type="text" autocomplete="off">
+        <br>
+        <label for="">Tipo texto con sugerencias</label>
+        <input type="text" list="sugerencias">
+        <datalist id="sugerencias">
+            <option value="Sugerencia 1">
+            <option value="Sugerencia 2">
+            <option value="Sugerencia 3">
+        </datalist>
+        <br>
+        <label for="">Tipo texto con validación</label>
+        <input type="text" required>
+        <br>
+        <label for="">Tipo texto con validación personalizada</label>
+        <input type="text" pattern="[A-Za-z]{3,}" title="Debe contener al menos 3 letras">
+        <br>
+        <label for="">Select - option</label>
+        <select>
+            <option value="opcion1">Opción 1</option>
+            <option value="opcion2">Opción 2</option>
+            <option value="opcion3">Opción 3</option>
+        </select>
+        <br>
+        <label for="">Textarea</label>
+        <textarea rows="4" cols="50" placeholder="Escribe aquí..."></textarea>
+        <br>
+        <progress value="50" max="100">50%</progress>
+    </form>
+</body>
+</html>
