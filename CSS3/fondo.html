@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            margin: auto;
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+        }
+        #container1 {
+            background: #5426ff;
+        }
+        #container2 {
+            background: linear-gradient(45deg, red, blue);
+        }
+        #container3 {
+            background: radial-gradient(orange, green);
+        }
+        #container4 {
+            background-image: url(files/angular.png);
+            background-attachment: scroll;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        #container5 {
+            background-image: url(files/angular.png), linear-gradient(green, blue);
+            background-blend-mode: luminosity;
+            background-attachment: scroll;
+            background-position: center;
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+    <div id="container1" class="container"></div>
+    <div id="container2" class="container"></div>
+    <div id="container3" class="container"></div>
+    <div id="container4" class="container"></div>
+    <div id="container5" class="container"></div>
+</body>
+</html>

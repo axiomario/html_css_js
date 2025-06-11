@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article {
+            border: 1px solid red;
+            margin-bottom: 100px;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            border: 1px solid blue;
+            line-height: 100px;
+            text-align: center;
+        }
+
+        .block div {
+            display: block;
+        }
+
+        .inline div {
+            display: inline-block;
+        }
+
+        .table div {
+            display: table-cell;
+        }
+
+        #relative {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background-color: lightblue;
+        }
+        #absolute {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            background-color: lightgreen;
+        }
+        #fixed {
+            position: fixed;
+            top: 100px;
+            left: 100px;
+            background-color: lightcoral;
+        }
+
+        .float div {
+            float: left;
+            
+            &:nth-last-child(1) {
+                float: right;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Bloque</h1>
+    <article class="block">
+        <div>UNO</div>
+        <div>DOS</div>
+        <div>TRES</div>
+        <div>CUATRO</div>
+    </article>
+    <h1>En linea</h1>
+    <article class="inline">
+        <div>UNO</div>
+        <div>DOS</div>
+        <div>TRES</div>
+        <div>CUATRO</div>
+    </article>
+    <h1>En tabla</h1>
+    <article class="table">
+        <div>UNO</div>
+        <div>DOS</div>
+        <div>TRES</div>
+        <div>CUATRO</div>
+    </article>
+    <h1>Posicionamiento</h1>
+    <article>
+        <div id="relative">REL</div>
+        <div id="absolute">ABS</div>
+        <div id="fixed">FIX</div>
+    </article>
+    <h1>Flotante</h1>
+    <article class="float">
+        <div>UNO</div>
+        <div>DOS</div>
+        <div>TRES</div>
+        <div>CUATRO</div>
+    </article>
+</body>
+</html>
